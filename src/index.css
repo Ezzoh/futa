@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1220;
+  --color-panel: #111a2e;
+  --color-line: #1e2a44;
+  --color-pitch: #22c55e;
+  --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+}
+
+html { background: var(--color-ink); color-scheme: dark; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+
+@keyframes pulse-dot { 0%,100% { opacity: 1 } 50% { opacity: .25 } }
+.live-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
